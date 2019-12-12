@@ -1,0 +1,43 @@
+/*  ↓ regole di stile generiche ↓ */
+.title {
+  color: #fff;
+}
+.item {
+  color: #6e6e6e;
+}
+.item--lighter {
+  color: #d2d2d2;
+}
+/*  ↑ regole di stile generiche ↑ */
+
+/* ↓ Header ↓ */
+.aside {
+  width: 350px;
+}
+/* ↑ Header ↑ */
+
+
+
+
+
+
+
+
+/* ==========
+↓INIZIO↓: mediaqueries */
+/*  ↓ mediaquery per display sm ↓  */
+@media screen and (min-width: 768px) {
+
+}
+
+/*  ↓ mediaquery per display md ↓  */
+@media screen and (min-width: 992px) {
+
+}
+
+/*  ↓ mediaquery per display lg ↓  */
+@media screen and (min-width: 1200px) {
+
+}
+/* ↑FINE↑: mediaqueries
+==========*/

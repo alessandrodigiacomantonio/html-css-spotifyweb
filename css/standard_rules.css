@@ -1,0 +1,163 @@
+/* regole di stile standard */
+
+html {
+  font-size: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========
+INIZIO: questa classe deve essere assegnata al genitore dell'elemento da voler centrare
+============*/
+.centered {
+  position: relative;
+}
+.centered > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ===========
+FINE: questa classe deve essere assegnata al genitore dell'elemento da voler centrare
+============*/
+
+/* .:. regole su liste .:. */
+.list_inline_block > li {
+  display: inline-block;
+}
+.list_style_none {
+  list-style: none;
+}
+
+/* .:. regole su testo .:. */
+.txt_decoration_none {
+  text-decoration: none;
+}
+.txt_decoration_underline {
+  text-decoration: underline;
+}
+.txt_align_c {
+  text-align: center;
+}
+.txt_align_l {
+  text-align: left;
+}
+.txt_align_r {
+  text-align: right;
+}
+.bold {
+  font-weight: 700;
+}
+.no_bold {
+  font-weight: 400;
+}
+
+/* .:. regole su elementi flottanti .:.*/
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+
+/* .:. regole su bordi .:. */
+.border_circle {
+  border-radius: 50%;
+}
+
+/* .:. regole su posizionamento, display e grandezze .:. */
+.pos_rel {
+  position: relative;
+}
+.pos_abs {
+  position: absolute;
+}
+.pos.fix {
+  position: fixed;
+}
+.dis_block {
+  display: block;
+}
+.dis_inline_block {
+  display: inline-block;
+}
+.dis_inline {
+  display: inline;
+}
+.width_100 {
+  width: 100%;
+}
+.width_90 {
+  width: 90%;
+}
+.width_80 {
+  width: 80%;
+}
+.width_70 {
+  width: 70%;
+}
+.width_60 {
+  width: 60%;
+}
+.width_50 {
+  width: 50%;
+}
+.width_40 {
+  width: 40%;
+}
+.width_30 {
+  width: 30%;
+}
+.width_25 {
+  width: 25%;
+}
+.width_20 {
+  width: 20%;
+}
+.width_10 {
+  width: 10%;
+}
+.height_100 {
+  height: 100%;
+}
+.height_90 {
+  height: 90%;
+}
+.height_80 {
+  height: 80%;
+}
+.height_70 {
+  height: 70%;
+}
+.height_60 {
+  height: 60%;
+}
+.height_50 {
+  height: 50%;
+}
+.height_40 {
+  height: 40%;
+}
+.height_30 {
+  height: 30%;
+}
+.height_25 {
+  height: 25%;
+}
+.height_20 {
+  height: 20%;
+}
+.height_10 {
+  height: 10%;
+}
