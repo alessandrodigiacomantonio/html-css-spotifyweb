@@ -1,14 +1,6 @@
 /*  ↓ regole di stile generiche ↓ */
-.title {
-  color: #fff;
-  font-weight: 700;
-  display: none;
-}
-.txt {
-  display: none;
-}
+
 .link {
-  display: flex;
   color: #6e6e6e;
   background-color: transparent;
   font-weight: 700;
@@ -25,20 +17,31 @@
   text-decoration: none;
   outline: none;
 }
+.title {
+  color: #fff;
+  font-weight: 700;
+  margin:0;
+}
 /*  ↑ regole di stile generiche ↑ */
 
 /* ↓ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↓ */
 .aside {
   width: 50px;
   height: calc(100vh - 100px);
-  min-height: 400px;
+  min-height: 500px;
   padding: 5px;
+}
+.aside .title,
+.aside .txt {
+  display: none;
 }
 /* ↓ logo ↓ */
 .logo {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 .logo__icon.fa-spotify:before {
   font-size: 2rem;
@@ -53,6 +56,7 @@
   flex-direction: column;
 }
 [class*="navbar__link"] {
+  display: flex;
   justify-content: center;
   border-left: 3px solid transparent;
   margin-left: -3px;
@@ -78,28 +82,71 @@
   margin: 0 0 0 5px;
   align-self: flex-end;
 }
-/* ↓ aside__playlist ↓ */
-.aside__add {
+
+/* ↓ playlist ↓ */
+.playlist {
+  display: none;
+  flex-direction: column;
+}
+.playlist__title {
+  margin-bottom: 10px;
+}
+.playlist__add {
   width: 3.6rem;
   height: 3.6rem;
-  border-radius: 0;
   background-color: #d2d2d2;
   color: #000;
 }
-.aside__link--create-playlist {
-  align-items: center;
+.playlist__link {
+  display: flex;
 }
-.aside__create-playlist__plus {
+.playlist__add__plus {
   font-size: 3.6rem;
   line-height: 3.6rem;
 }
-.aside__txt--create-playlist {
+.playlist__add__txt {
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-size: 1.6rem;
+  align-self: center;
+}
+.playlist__txt{
   margin: 0 0 0 10px;
 }
 
+/* ↓ aside__booter ↓ */
+.aside__footer {
 
-
+}
 /* ↑ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↑ */
+
+/* ↓ main ↓ */
+.main {
+  width: calc(100% - 50px);
+  background-color: #141922;
+}
+.upgrade {
+  height: 100px;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ↑ main ↑ */
+
+
+/* ↓ footer ↓ */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #282828;
+}
+/* ↑ footer ↑ */
+
 
 
 
@@ -107,16 +154,15 @@
 ↓INIZIO↓: mediaqueries */
 /*  ↓ mediaquery per display sm ↓  */
 @media screen and (min-width: 768px) {
-  .title,
-  .txt {
+  .aside .title,
+  .aside .txt {
     display: block;
   }
-
   .aside {
     width: 350px;
     padding: 0;
   }
-  .aside > *:not(.navbar) {
+  .aside > *:not([role="header"]) {
     padding: 10px 20px;
   }
   .logo {
@@ -127,11 +173,18 @@
   }
   .navbar {
     padding: 10px 20px 10px 0;
+    margin-bottom: 10px;
   }
   [class*="navbar__link"] {
     justify-content: flex-start;
     padding-left: 13px;
     margin-left: 0;
+  }
+  .playlist {
+    display: flex;
+  }
+  .main {
+    width: calc(100% - 350px);
   }
 }
 
