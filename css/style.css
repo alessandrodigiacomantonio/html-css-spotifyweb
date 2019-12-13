@@ -14,7 +14,6 @@
   font-weight: 700;
   margin-bottom: 10px;
   border: none;
-  border-left: 3px solid transparent;
   cursor: pointer;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -33,23 +32,30 @@
   width: 50px;
   height: calc(100vh - 100px);
   min-height: 400px;
+  padding: 5px;
 }
 /* ↓ logo ↓ */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .logo__icon.fa-spotify:before {
   font-size: 2rem;
 }
 .logo__title {
-  display: inline-block;
+  margin: 0 0 0 10px;
+  align-self: flex-end;
 }
-/* ↓ aside__menu ↓ */
-.aside > *:not(.navbar) {
-  padding: 10px 20px;
-}
+/* ↓ navbar ↓ */
 .navbar {
-  padding: 10px 20px 10px 0;
+  display: flex;
+  flex-direction: column;
 }
 .navbar__link {
-  padding-left: 13px;
+  justify-content: center;
+  border-left: 3px solid transparent;
+  margin-left: -3px;
 }
 .navbar__link:focus {
   color: #d2d2d2;
@@ -98,9 +104,24 @@
 
   .aside {
     width: 350px;
+    padding: 0;
+  }
+  .aside > *:not(.navbar) {
+    padding: 10px 20px;
+  }
+  .logo {
+    justify-content: flex-start;
   }
   .logo__icon.fa-spotify:before {
     font-size: 3.6rem;
+  }
+  .navbar {
+    padding: 10px 20px 10px 0;
+  }
+  .navbar__link {
+    justify-content: flex-start;
+    padding-left: 13px;
+    margin-left: 0;
   }
 }
 
