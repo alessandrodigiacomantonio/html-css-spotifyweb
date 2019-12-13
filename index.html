@@ -17,12 +17,15 @@
 <body>
   <!-- ↓INIZIO↓ .:. Header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer -->
   <header class="aside bg_dark">
+
     <!-- ↓ Header.aside: __logo ↓  -->
     <a class="aside__logo" href="">
       <i class="aside__icon--logo icon fab fa-spotify color_white"></i>
       <h1 class="aside__title--logo title">Spotify</h1>
     </a>
     <!--  ↑ Header.aside: __logo ↑ -->
+
+    <!--  ↓ Header.aside: __menu ↓ -->
     <nav class="aside__menu">
         <ul class="list_style_none overfw_hidden">
           <li class="aside__item item">
@@ -45,18 +48,23 @@
           </li>
         </ul>
     </nav>
-    <!-- ↓ Header.aside: __menu ↓  -->
+    <!--  ↑ Header.aside: __menu ↑ -->
+
+    <!--  ↓ Header.aside: __create-playlist ↓  -->
     <nav class="aside__playlist">
         <h3 class="aside__title--playlist title text-uppercase">
           playlist
         </h3>
-        <div class="aside__create-playlist">
-          <div class="aside__add">
-            
+        <button class="aside__link--create-playlist link dis_flex">
+          <div class="aside__add centered">
+            <span class="aside__create-playlist__plus txt bold">
+              &plus;
+            </span>
           </div>
-        </div>
+          <p class="aside__txt--create-playlist txt">Crea Playlist</p>
+        </button>
     </nav>
-    <!--  ↑ Header.aside: __menu ↑ -->
+    <!--  ↑ Header.aside: __create-playlist ↑ -->
   </header>
   <!-- ↑FINE↑ .:. header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer -->
   <main class="main">
