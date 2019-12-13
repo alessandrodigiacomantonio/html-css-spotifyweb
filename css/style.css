@@ -2,13 +2,23 @@
 .title {
   color: #fff;
   font-weight: 700;
+  display: none;
+}
+.txt {
+  display: none;
 }
 .link {
+  display: flex;
   color: #6e6e6e;
   background-color: transparent;
+  font-weight: 700;
+  margin-bottom: 10px;
   border: none;
+  border-left: 3px solid transparent;
   cursor: pointer;
-  display: flex;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .link:active,
 .link:hover,
@@ -20,50 +30,35 @@
 
 /* ↓ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↓ */
 .aside {
-  width: 350px;
+  width: 50px;
   height: calc(100vh - 100px);
   min-height: 400px;
 }
-/* .:. logo .:. */
-.aside__title--logo {
+/* ↓ logo ↓ */
+.logo__icon.fa-spotify:before {
+  font-size: 2rem;
+}
+.logo__title {
   display: inline-block;
 }
 /* ↓ aside__menu ↓ */
-.aside > *:not(.aside__menu) {
+.aside > *:not(.navbar) {
   padding: 10px 20px;
 }
-.aside__menu {
+.navbar {
   padding: 10px 20px 10px 0;
 }
-[class*="aside__item"] {
-  border-left: 3px solid transparent;
-  margin-bottom: 10px;
-  font-weight: 700;
+.navbar__link {
+  padding-left: 13px;
 }
-/* [class*="item--forced-focus"] {
-  border-left: 3px solid #1ed760;
-} */
-.aside__item:focus-within + [class*="item--forced-focus"] {
-  border-left: 3px solid transparent;
-}
-
-[class*="aside__item"]:focus-within {
+.navbar__link:focus {
+  color: #d2d2d2;
   border-left: 3px solid #1ed760;
 }
-.aside__link {
-  padding-left: 20px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-.aside__link:focus {
+.navbar__link:hover {
   color: #d2d2d2;
 }
-.aside__link:hover {
-  color: #d2d2d2;
-}
-
-.aside__txt {
+.navbar__txt {
   margin: 0 0 0 5px;
   align-self: flex-end;
 }
@@ -96,7 +91,15 @@
 ↓INIZIO↓: mediaqueries */
 /*  ↓ mediaquery per display sm ↓  */
 @media screen and (min-width: 768px) {
-  .aside__icon--logo {
+  .title,
+  .txt {
+    display: block;
+  }
+
+  .aside {
+    width: 350px;
+  }
+  .logo__icon.fa-spotify:before {
     font-size: 3.6rem;
   }
 }
