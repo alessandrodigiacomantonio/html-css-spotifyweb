@@ -1,21 +1,23 @@
 /* regole di stile standard */
-
 html {
   font-size: 10px;
 }
 
+body {
+  min-width: 400px;
+}
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /* ===========
-INIZIO: questa classe deve essere assegnata al genitore dell'elemento da voler centrare
-============*/
+INIZIO: questa classe deve essere assegnata al genitore dell'elemento da voler centrare */
 .centered {
   position: relative;
+  background-color:
 }
 .centered > * {
   position: absolute;
@@ -23,10 +25,55 @@ INIZIO: questa classe deve essere assegnata al genitore dell'elemento da voler c
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* ===========
-FINE: questa classe deve essere assegnata al genitore dell'elemento da voler centrare
+/* FINE: questa classe deve essere assegnata al genitore dell'elemento da voler centrare
 ============*/
 
+/* .:. regole su blocchi e background.:. */
+.overfw_hidden {
+  overflow: hidden;
+}
+.overfw_x_hidden {
+  overflow-x: hidden;
+}
+.overfw_y_hidden {
+  overflow-y: hidden;
+}
+.overfw_auto {
+  overflow: auto;
+}
+.overfw_x_auto {
+  overflow-x: auto;
+}
+.overfw_y_auto {
+  overflow-y: auto;
+}
+.overfw_scroll {
+  overflow: scroll;
+}
+.overfw_x_scroll {
+  overflow-x: scroll;
+}
+.overfw_y_scroll {
+  overflow-y: scroll;
+}
+.bg_pos_center {
+  background-position: center;
+}
+.bg_size_cover {
+  background-size: cover;
+}
+.bg_size_contain {
+  background-size: contain;
+}
+.bg_repeat_no {
+  background-repeat: no-repeat;
+}
+.bg_white {
+  background-color: #fff;
+}
+.bg_dark {
+  background-color: #000;
+}
 /* .:. regole su liste .:. */
 .list_inline_block > li {
   display: inline-block;
@@ -36,6 +83,9 @@ FINE: questa classe deve essere assegnata al genitore dell'elemento da voler cen
 }
 
 /* .:. regole su testo .:. */
+.color_white {
+  color: #fff;
+}
 .txt_decoration_none {
   text-decoration: none;
 }
@@ -94,6 +144,9 @@ FINE: questa classe deve essere assegnata al genitore dell'elemento da voler cen
 }
 .dis_inline {
   display: inline;
+}
+.dis_flex {
+  display: flex;
 }
 .width_100 {
   width: 100%;

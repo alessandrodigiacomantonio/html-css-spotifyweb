@@ -16,37 +16,46 @@
 </head>
 <body>
   <!-- ↓INIZIO↓ .:. Header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer -->
-  <header class="aside">
+  <header class="aside bg_dark">
     <!-- ↓ Header.aside: __logo ↓  -->
     <a class="aside__logo" href="">
-      <i class="aside__icon--logo icon"></i>
-      <h1 class="aside__title--logo title"></h1>
+      <i class="aside__icon--logo icon fab fa-spotify color_white"></i>
+      <h1 class="aside__title--logo title">Spotify</h1>
     </a>
     <!--  ↑ Header.aside: __logo ↑ -->
-      <nav class="aside__menu">
-        <ul class="list_style_none list_inline-block overfw_hidden">
-          <li class="aside__item--lighter item">
-            <a href="">
-              <i class="aside__icon icon"></i>
+    <nav class="aside__menu">
+        <ul class="list_style_none overfw_hidden">
+          <li class="aside__item item">
+            <button class="aside__link--lighter link" type="button" role="link">
+              <i class="aside__icon icon fas fa-home"></i>
               <p class="aside__txt txt">Home</p>
-            </a>
+            </button>
           </li>
           <li class="aside__item item">
-            <a href="">
-              <i class="aside__icon icon"></i>
+            <button class="aside__link link" type="button" role="link">
+              <i class="aside__icon icon fas fa-search"></i>
               <p class="aside__txt txt">Cerca</p>
-            </a>
+            </button>
           </li>
           <li class="aside__item item">
-            <a href="">
-              <i class="aside__icon icon"></i>
+            <button class="aside__link link" type="button" role="link">
+              <i class="aside__icon icon fas fa-book"></i>
               <p class="aside__txt txt">La tua libreria</p>
-            </a>
+            </button>
           </li>
         </ul>
-      </nav>
+    </nav>
     <!-- ↓ Header.aside: __menu ↓  -->
-
+    <nav class="aside__playlist">
+        <h3 class="aside__title--playlist title text-uppercase">
+          playlist
+        </h3>
+        <div class="aside__create-playlist">
+          <div class="aside__add">
+            
+          </div>
+        </div>
+    </nav>
     <!--  ↑ Header.aside: __menu ↑ -->
   </header>
   <!-- ↑FINE↑ .:. header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer -->

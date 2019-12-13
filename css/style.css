@@ -2,23 +2,52 @@
 .title {
   color: #fff;
 }
-.item {
+.link {
   color: #6e6e6e;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.item--lighter {
-  color: #d2d2d2;
+.link:active,
+.link:hover,
+.link:focus {
+  text-decoration: none;
+  outline: none;
 }
 /*  ↑ regole di stile generiche ↑ */
 
 /* ↓ Header ↓ */
 .aside {
   width: 350px;
+  height: calc(100vh - 100px);
 }
-/* ↑ Header ↑ */
+.aside > *:not(.aside__menu) {
+  padding: 10px 20px;
+}
+.aside__menu {
+  padding: 10px 20px 10px 0;
+}
+.aside__title--logo {
+  display: inline-block;
+}
+.aside__item {
+  border-left: 2px solid transparent;
+}
 
-
-
-
+.aside__item:focus-within {
+  border-left: 2px solid #adff2f;
+}
+.aside__txt {
+  display: inline-block;
+  margin: 0 0 0 5px;;
+}
+.aside__link {
+padding-left: 20px;
+}
+.aside__link--lighter {
+  color: #d2d2d2;
+  padding-left: 20px;
+}
 
 
 
@@ -27,7 +56,9 @@
 ↓INIZIO↓: mediaqueries */
 /*  ↓ mediaquery per display sm ↓  */
 @media screen and (min-width: 768px) {
-
+  .aside__icon--logo {
+    font-size: 3.6rem;
+  }
 }
 
 /*  ↓ mediaquery per display md ↓  */
