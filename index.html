@@ -28,21 +28,24 @@
     <!--  ↓ Header.aside: __menu ↓ -->
     <nav class="aside__menu">
         <ul class="list_style_none overfw_hidden">
-          <li class="aside__item item">
-            <button class="aside__link--lighter link" type="button" role="link">
-              <i class="aside__icon icon fas fa-home"></i>
+          <li class="aside__item--forced-focus item">
+            <button class="aside__link link" type="button" role="link">
+              <!-- <i class="aside__icon icon fas fa-home"></i> -->
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
               <p class="aside__txt txt">Home</p>
             </button>
           </li>
           <li class="aside__item item">
             <button class="aside__link link" type="button" role="link">
-              <i class="aside__icon icon fas fa-search"></i>
+              <!-- <i class="aside__icon icon fas fa-search"></i> -->
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
               <p class="aside__txt txt">Cerca</p>
             </button>
           </li>
           <li class="aside__item item">
             <button class="aside__link link" type="button" role="link">
-              <i class="aside__icon icon fas fa-book"></i>
+              <!-- <i class="aside__icon icon fas fa-book"></i> -->
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
               <p class="aside__txt txt">La tua libreria</p>
             </button>
           </li>
@@ -55,7 +58,7 @@
         <h3 class="aside__title--playlist title text-uppercase">
           playlist
         </h3>
-        <button class="aside__link--create-playlist link dis_flex">
+        <button class="aside__link--create-playlist link">
           <div class="aside__add centered">
             <span class="aside__create-playlist__plus txt bold">
               &plus;
@@ -73,5 +76,7 @@
   <footer class="footer">
 
   </footer>
+  <!-- ↓ questo script vuoto, permette di bypassare il bug di chrome che rende visibili le transition ai refresh della pagina ↓ -->
+  <script> </script>
 </body>
 </html>
