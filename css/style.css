@@ -21,6 +21,7 @@
 .aside {
   width: 350px;
   height: calc(100vh - 100px);
+  min-height: 400px;
 }
 /* .:. logo .:. */
 .aside__title--logo {
