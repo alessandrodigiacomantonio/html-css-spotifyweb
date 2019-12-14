@@ -18,11 +18,10 @@
 </head>
 <body>
   <div class="wrapper__all-page dis_flex">
-
     <!--
     ↓ Header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↓
      -->
-    <header class="aside bg_dark dis_flex" role="header">
+    <header class="aside bg_dark dis_flex_col" role="header">
       <!-- sezione role='header' di .aside -->
       <section class="wrapper__aside-header" role="header">
         <!-- ↓ .aside: logo ↓  -->
@@ -33,7 +32,7 @@
         <!--  ↑ .aside: logo ↑ -->
 
         <!--  ↓ .aside: .navbar ↓ -->
-        <nav class="navbar">
+        <nav class="navbar dis_flex_col">
           <button class="navbar__link link" type="button" role="link">
             <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
             <p class="navbar__txt txt">Cerca</p>
@@ -51,57 +50,63 @@
       </section>
       <!--  ↑ sezione role='header' di .aside  ↑ -->
 
-      <!--  ↓ sezione role='main' di .aside ↓ -->
-      <div class="wrapper__role-main-footer dis_flex"><nav class="playlist" role="main">
-          <h3 class="playlist__title title text-uppercase">
-            playlist
-          </h3>
-          <button class="playlist__link link" role="link">
-            <div class="playlist__add centered">
-              <span class="playlist__add__plus txt bold">
-                &plus;
-              </span>
-            </div>
-            <p class="playlist__add__txt txt">Crea Playlist</p>
-          </button>
-          <ul>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="" class="playlist__item link txt">Nome Playlist</a>
-            </li>
-          </ul>
-        </nav>
-        <!--  ↑ sezione role='main' di .aside ↑  -->
+      <!--  ↓ sezione role='main-top' di .aside ↓ -->
+      <section class="create-playlist" role="main-top">
+        <h3 class="create-playlist__title title text-uppercase">
+          playlist
+        </h3>
+        <a class="create-playlist__link link" href="" role="button">
+          <div class="create-playlist__add centered">
+            <span class="create-playlist__add__plus txt bold">
+              &plus;
+            </span>
+          </div>
+          <p class="create-playlist__add__txt txt">Crea Playlist</p>
+        </a>
+      </section>
+      <!--  ↑ sezione role='main-top' di .aside ↑  -->
 
-        <!--  ↓ sezione role='footer' di .aside ↓ -->
-        <section class="aside__footer bg_dark" role="footer">
-          <p>Lorem ipsum dolor sit.</p>
-          <h3>Jon</h3>
-        </section>
-        <!--  ↑ sezione role='footer' di .aside ↑ --></div>
+      <!--  ↓ sezione role='main-bottom' di .aside ↓  -->
+      <nav class="playlist" role="main-bottom">
+        <ul class="playlist__menu list_style_none">
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt"role="button">Nome Playlist</a>
+          </li>
+        </ul>
+      </nav>
+      <!--  ↑ sezione role='main-bottom di .aside ↑  -->
+
+      <!--  ↓ sezione role='footer' di .aside ↓ -->
+      <section class="aside__footer bg_dark" role="footer">
+        <p>Install app</p>
+        <svg xmlns="http://www.w3.org/2000/svg" style="background-color: rgb(0, 0, 0);" viewBox="0 0 80 90"><title>User Icon</title><path fill="#ffffff" fill-rule="evenodd" d="M 67.74 61.78 l -14.5 -8.334 c -0.735 -0.422 -1.24 -1.145 -1.385 -1.98 c -0.145 -0.835 0.088 -1.685 0.638 -2.33 l 5.912 -6.93 c 3.747 -4.378 5.81 -9.967 5.81 -15.737 v -2.256 c 0 -6.668 -2.792 -13.108 -7.658 -17.67 C 51.622 1.92 45.17 -0.386 38.392 0.054 c -12.677 0.82 -22.607 11.772 -22.607 24.934 v 1.483 c 0 5.77 2.063 11.36 5.81 15.736 l 5.912 6.933 c 0.55 0.644 0.783 1.493 0.638 2.33 c -0.143 0.834 -0.648 1.556 -1.383 1.98 l -14.494 8.33 C 4.7 66.077 0 74.15 0 82.844 v 6.76 h 3.333 v -6.76 c 0 -7.5 4.055 -14.46 10.59 -18.174 l 14.5 -8.334 c 1.597 -0.918 2.692 -2.487 3.007 -4.302 c 0.315 -1.815 -0.19 -3.66 -1.387 -5.06 l -5.913 -6.936 c -3.23 -3.775 -5.01 -8.594 -5.01 -13.57 v -1.484 c 0 -11.41 8.562 -20.9 19.488 -21.608 c 5.85 -0.377 11.415 1.61 15.67 5.598 c 4.26 3.992 6.605 9.404 6.605 15.24 v 2.254 c 0 4.976 -1.778 9.796 -5.01 13.57 l -5.915 6.935 c -1.195 1.4 -1.7 3.246 -1.386 5.06 c 0.313 1.816 1.41 3.385 3.008 4.303 l 14.507 8.338 c 6.525 3.71 10.58 10.67 10.58 18.17 v 6.76 H 80 v -6.76 c 0 -8.695 -4.7 -16.768 -12.26 -21.063 Z" /></svg>
+        <h3>Jon</h3>
+      </section>
+      <!--  ↑ sezione role='footer' di .aside ↑ -->
     </header>
     <!--
      ↑ header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↑
     -->
     <main class="main" role="main">
-      <button class="upgrage">
+      <button class="upgrade">
       </button>
     </main>
     <footer class="footer">

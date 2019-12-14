@@ -22,15 +22,20 @@
   font-weight: 700;
   margin:0;
 }
+.dis_flex_col {
+  display: flex;
+  flex-direction: column;
+}
 .wrapper__all-page {
-  height:
+  width: 100%;
+  height: calc(100vh - 100px);
 }
 /*  ↑ regole di stile generiche ↑ */
 
 /* ↓ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↓ */
 .aside {
   width: 50px;
-  height: calc(100vh - 100px);
+  height: 100%;
   min-height: 500px;
   padding: 5px;
 }
@@ -43,8 +48,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 .logo__icon.fa-spotify:before {
   font-size: 2rem;
@@ -54,10 +57,6 @@
   align-self: flex-end;
 }
 /* ↓ navbar ↓ */
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
 [class*="navbar__link"] {
   display: flex;
   justify-content: center;
@@ -86,37 +85,54 @@
   align-self: flex-end;
 }
 
-/* ↓ playlist ↓ */
-.playlist {
+/* ↓ create-playlist ↓ */
+.create-playlist {
   display: none;
-  flex-direction: column;
+
 }
-.playlist__title {
-  margin-bottom: 10px;
+.create-playlist__title {
+  margin-bottom: 20px;
 }
-.playlist__add {
+.create-playlist__link {
+  display: flex;
+}
+.create-playlist__link:hover .create-playlist__add{
+  background-color: #23527c;
+  border-radius: 8px;
+}
+.create-playlist__add {
   width: 3.6rem;
   height: 3.6rem;
   background-color: #d2d2d2;
   color: #000;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
-.playlist__link {
-  display: flex;
-}
-.playlist__add__plus {
+.create-playlist__add__plus {
   font-size: 3.6rem;
   line-height: 3.6rem;
 }
-.playlist__add__txt {
+.create-playlist__add__txt {
   margin-bottom: 0;
   margin-left: 5px;
   font-size: 1.6rem;
   align-self: center;
 }
-.playlist__txt{
+.create-playlist__txt{
   margin: 0 0 0 10px;
 }
-
+.playlist {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.playlist__menu {
+  width: 100%;
+}
+.playlist__item:hover {
+  padding-left: 20px;
+}
 /* ↓ aside__booter ↓ */
 .aside__footer {
 
@@ -167,10 +183,12 @@
     padding: 0;
   }
   .aside > *:not([role="header"]) {
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
   .logo {
     justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
   }
   .logo__icon.fa-spotify:before {
     font-size: 3.6rem;
@@ -184,8 +202,8 @@
     padding-left: 13px;
     margin-left: 0;
   }
-  .playlist {
-    display: flex;
+  .create-playlist {
+    display: block;
   }
   .main {
     width: calc(100% - 350px);
