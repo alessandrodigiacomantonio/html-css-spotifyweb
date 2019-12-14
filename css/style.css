@@ -6,7 +6,7 @@ body {
   color: #6e6e6e;
   background-color: transparent;
   font-weight: 700;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   border: none;
   cursor: pointer;
   -webkit-transition: 0.2s;
