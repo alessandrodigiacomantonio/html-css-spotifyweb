@@ -22,7 +22,7 @@
     <!--
     ↓ Header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↓
      -->
-    <header class="aside bg_dark" role="header">
+    <header class="aside bg_dark dis_flex" role="header">
       <!-- sezione role='header' di .aside -->
       <section class="wrapper__aside-header" role="header">
         <!-- ↓ .aside: logo ↓  -->
@@ -52,34 +52,50 @@
       <!--  ↑ sezione role='header' di .aside  ↑ -->
 
       <!--  ↓ sezione role='main' di .aside ↓ -->
-      <nav class="playlist" role="main">
-        <h3 class="playlist__title title text-uppercase">
-          playlist
-        </h3>
-        <button class="playlist__link link" role="link">
-          <div class="playlist__add centered">
-            <span class="playlist__add__plus txt bold">
-              &plus;
-            </span>
-          </div>
-          <p class="playlist__add__txt txt">Crea Playlist</p>
-        </button>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-        <a href="" class="playlist__item link txt">Nome Playlist</a>
-      </nav>
-      <!--  ↑ sezione role='main' di .aside ↑  -->
+      <div class="wrapper__role-main-footer dis_flex"><nav class="playlist" role="main">
+          <h3 class="playlist__title title text-uppercase">
+            playlist
+          </h3>
+          <button class="playlist__link link" role="link">
+            <div class="playlist__add centered">
+              <span class="playlist__add__plus txt bold">
+                &plus;
+              </span>
+            </div>
+            <p class="playlist__add__txt txt">Crea Playlist</p>
+          </button>
+          <ul>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+            <li>
+              <a href="" class="playlist__item link txt">Nome Playlist</a>
+            </li>
+          </ul>
+        </nav>
+        <!--  ↑ sezione role='main' di .aside ↑  -->
 
-      <!--  ↓ sezione role='footer' di .aside ↓ -->
-      <section class="aside__footer bg_dark" role="footer">
-        <p>Lorem ipsum dolor sit.</p>
-        <h3>Jon</h3>
-      </section>
-      <!--  ↑ sezione role='footer' di .aside ↑ -->
+        <!--  ↓ sezione role='footer' di .aside ↓ -->
+        <section class="aside__footer bg_dark" role="footer">
+          <p>Lorem ipsum dolor sit.</p>
+          <h3>Jon</h3>
+        </section>
+        <!--  ↑ sezione role='footer' di .aside ↑ --></div>
     </header>
     <!--
      ↑ header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↑

@@ -22,6 +22,9 @@
   font-weight: 700;
   margin:0;
 }
+.wrapper__all-page {
+  height:
+}
 /*  ↑ regole di stile generiche ↑ */
 
 /* ↓ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↓ */
@@ -40,7 +43,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
 }
 .logo__icon.fa-spotify:before {
@@ -123,6 +126,7 @@
 /* ↓ main ↓ */
 .main {
   width: calc(100% - 50px);
+  height: calc(100vh - 100px);
   background-color: #141922;
 }
 .upgrade {
