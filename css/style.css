@@ -143,17 +143,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+.aside__footer__install:hover .aside__footer__install__icon {
+  width: 30px;
+}
 .aside__footer__install__icon {
   width: 20px;
   color: #6e6e6e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .aside__footer__install__txt {
   margin: 0 0 0 10px;
+  color: #6e6e6e;
 }
 .aside__footer__profile {
   padding-top: 10px;
   align-items: center;
   justify-content: center;
+}
+.aside__footer__profile:hover .aside__footer__profile__icon {
+  background-color: #23527c;
 }
 .aside__footer__profile__icon {
   width: 29px;
@@ -161,6 +171,9 @@ body {
   text-align: center;
   border-radius: 50%;
   background-color: #6e6e6e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .aside__footer__profile__icon path {
   transform: scale(0.37);
