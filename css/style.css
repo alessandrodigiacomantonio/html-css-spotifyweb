@@ -1,5 +1,7 @@
 /*  ↓ regole di stile generiche ↓ */
-
+body {
+  background-color: #141922;
+}
 .link {
   color: #6e6e6e;
   background-color: transparent;
@@ -36,7 +38,7 @@
 .aside {
   width: 50px;
   height: 100%;
-  min-height: 500px;
+  min-height: 100px;
   padding: 5px;
 }
 .aside .title,
@@ -134,8 +136,38 @@
   padding-left: 20px;
 }
 /* ↓ aside__booter ↓ */
-.aside__footer {
-
+.aside__footer__install {
+  padding-right: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6e6e6e;
+  justify-content: center;
+  align-items: center;
+}
+.aside__footer__install__icon {
+  width: 20px;
+  color: #6e6e6e;
+}
+.aside__footer__install__txt {
+  margin: 0 0 0 10px;
+}
+.aside__footer__profile {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.aside__footer__profile__icon {
+  width: 29px;
+  height: 29px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #6e6e6e;
+}
+.aside__footer__profile__icon path {
+  transform: scale(0.37);
+}
+.aside__footer__profile__title {
+  font-size: 1.5rem;
+  margin: 0 0 0 10px;
 }
 /* ↑ Header: classe aside (blocco con gb nero sulla sinistra della pagina)  ↑ */
 
@@ -180,6 +212,7 @@
   }
   .aside {
     width: 350px;
+    min-height: 450px;
     padding: 0;
   }
   .aside > *:not([role="header"]) {
@@ -204,6 +237,13 @@
   }
   .create-playlist {
     display: block;
+  }
+  .aside__footer__install {
+    justify-content: flex-start;
+    padding-right: 0px;
+  }
+  .aside__footer__profile {
+    justify-content: flex-start;
   }
   .main {
     width: calc(100% - 350px);
