@@ -19,18 +19,21 @@ body {
   text-decoration: none;
   outline: none;
 }
+
 .title {
   color: #fff;
   font-weight: 700;
   margin:0;
 }
+.title--h2 {
+  font-size: 2.4rem;
+}
+.txt--grey {
+  color: #6e6e6e;
+}
 .dis_flex_col {
   display: flex;
   flex-direction: column;
-}
-.container-row {
-  display: flex;
-  justify-content: space-around;
 }
 .wrapper__all-page {
   width: 100%;
@@ -202,6 +205,7 @@ body {
   width: calc(100% - 50px);
   height: 80px;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .upgrade {
   position: fixed;
@@ -225,25 +229,50 @@ body {
 
 /* ↓ sezione .main-content ↓ */
 /* ↓ sezione .main-content. regole generali ↓ */
-.main-content > section {
-  margin-top: 30px;
-}
 .main-content {
   padding: 95px 15px 15px 15px;
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
-.main-content__container-row {
+.main-content > section {
   margin-top: 30px;
+}
+.main-content__container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .main-content__soundtrack-box {
   padding-right: 15px;
+  width: calc(100% / 6);
+  cursor: pointer;
+}
+.main-content__soundtrack-box:hover .main-content__soundtrack-box__image .image {
+  filter: opacity(0.3);
+  border-radius: 10px;
+}
+.main-content__soundtrack-box:hover .main-content__soundtrack-box__icon {
+  opacity: 1;
 }
 .main-content__soundtrack-box__image {
-  height: 200px;
-  width: 200px;
-  background-size: cover;
+  position: relative;
+}
+.main-content__soundtrack-box__image .image {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-content__soundtrack-box__icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .main-content__soundtrack-box__title {
   margin: 10px auto;
@@ -293,14 +322,22 @@ body {
 }
 /* ↑ sezione .main-content__navbar ↑ */
 
-/* ↓ sezione .main-content__recently-played ↓ */
-.main-content__recently-played__title {
-  font-size: 2.4rem;
+/* ↓ sezione .main-content__create-for-you ↓ */
+.main-content__create-for-you__txt {
+  margin-top: 10px;
 }
-.main-content__soundtrack-box__image.metal_lifting {
-  background-image: url("../img/metal_lifting.jpg")
+/* ↑ sezione .main-content__create-for-you ↑ */
+
+/* ↓ sezione .main-content__popular-artist ↓ */
+.main-content__popular-artist__txt {
+  margin-top: 10px;
 }
-/* ↑ sezione .main-content__recently-played ↑ */
+.main-content__soundtrack-box__image.einaudi .image,
+.main-content__soundtrack-box__image.youg .image {
+  border-radius: 50%;
+}
+/* ↑ sezione .main-content__popular-artist ↑ */
+
 
 /* ↑ sezione .main_content ↑ */
 
