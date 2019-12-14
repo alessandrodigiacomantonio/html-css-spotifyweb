@@ -245,7 +245,7 @@ body {
 }
 .main-content__soundtrack-box {
   padding-right: 15px;
-  width: calc(100% / 6);
+  width: calc(100% / 2);
   cursor: pointer;
 }
 .main-content__soundtrack-box:hover .main-content__soundtrack-box__image .image {
@@ -411,12 +411,16 @@ body {
 
 /*  ↓ mediaquery per display md ↓  */
 @media screen and (min-width: 992px) {
-
+  .main-content__soundtrack-box {
+    width: calc(100% / 4);
+  }
 }
 
 /*  ↓ mediaquery per display lg ↓  */
 @media screen and (min-width: 1200px) {
-
+  .main-content__soundtrack-box {
+    width: calc(100% / 6);
+  }
 }
 /* ↑FINE↑: mediaqueries
 ==========*/
