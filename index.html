@@ -70,25 +70,26 @@
       <nav class="playlist" role="main-bottom">
         <ul class="playlist__menu list_style_none">
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt" role="button">Qual è il </a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt" role="button">Patrono degli innamorati?</a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt" role="button">San Frattamo.</a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <!-- inserito style per velocizzare la cagata che ho scritto (barzellettine prese da internet, non farina del mio sacco :D ) -->
+            <a href="" class="playlist__item link txt" role="button" style="margin-top: 20px">Se il</a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt" role="button">Mio capo</a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt" role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt" role="button">Si droga.. Io sono</a>
           </li>
           <li>
-            <a href="" class="playlist__item link txt"role="button">Nome Playlist</a>
+            <a href="" class="playlist__item link txt"role="button">Un tossico dipendente?</a>
           </li>
         </ul>
       </nav>
@@ -275,19 +276,36 @@
       </section>
     </main>
     <footer class="footer dis_flex">
-      <div class="footer__track-info dis_flex">
+      <section class="footer__track-info dis_flex">
         <div class="footer__track-info__cover">
-          <img class="width_100" src="img/sinister.jpeg" alt="sinister">
+          <img class="width_100" src="img/sinister.jpeg" alt="sinister" title="In ascolto">
         </div>
         <div class="footer__track-info__txt">
           <h4 class="footer__track-info__title title--h4 title">Sinister</h4>
           <p class="footer__track-info__name txt--grey txt">Sinister: - The Rite of left -</p>
         </div>
         <div class="footer__track-info__actions dis_flex">
-          <i class="footer__track-info__icon icon--grey far fa-heart"></i>
-          <i class="footer__track-info__icon icon--grey far fa-folder"></i>
+          <i class="footer__track-info__icon icon--grey far fa-heart" title="Aggiungi ai Preferiti"></i>
+          <i class="footer__track-info__icon icon--grey far fa-folder" title="Aggiungi a una playlist"></i>
         </div>
-      </div>
+      </section>
+      <section class="footer__track-player dis_flex_col color_white">
+        <div class="footer__track-player__actions dis_flex">
+          <i class="footer__track-player__icon fas fa-random"></i>
+          <i class="footer__track-player__icon fas fa-step-backward"></i>
+          <i class="footer__track-player__icon far fa-play-circle"></i>
+          <i class="footer__track-player__icon fas fa-step-forward"></i>
+          <i class="footer__track-player__icon fas fa-redo-alt"></i>
+        </div>
+        <div class="footer__track-player__bar dis_flex">
+          <span class="footer__track-player__bar__time-duration">1:26</span>
+          <div class="footer__track-player__bar--grey dis_flex">
+            <div class="footer__track-player__bar--green">
+            </div>
+          </div>
+          <span class="footer__track-player__bar__time-left">4:35</span>
+        </div>
+      </section>
     </footer>
   </div>
   <!-- ↓ questo script vuoto, permette di bypassare il bug di chrome che rende visibili le transition ai refresh della pagina ↓ -->
