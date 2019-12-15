@@ -215,6 +215,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 24px;
   margin-right: 20px;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 0 30px;
   -webkit-transition: 0.2s;
@@ -224,6 +225,12 @@ body {
 .upgrade:hover {
   transform: scale(1.2);
   margin-right: 41px;
+}
+.upgrade:active {
+  transform: scale(1.1);
+}
+.upgrade:focus {
+  outline: none;
 }
 /* ↑ sezione .call_to_action ↑ */
 
