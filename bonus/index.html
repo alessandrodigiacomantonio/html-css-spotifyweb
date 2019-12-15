@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- .:. favicon Spotify .:. -->
+  <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+  <!-- .:. Bootstrap v3.3.7 .:. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- .:. FontAwesome .:. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+   <!-- .:. foglio di stile contenente delle regole generali .:. -->
+  <link rel="stylesheet" href="css/standard_rules.css">
+  <!-- .:. foglio di stile principale .:. -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Spotify Web</title>
+</head>
+<body>
+  <div class="wrapper__all-page dis_flex">
+    <!--
+    ↓ Header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↓
+     -->
+    <header class="aside bg_dark dis_flex_col" role="header">
+      <!-- sezione role='header' di .aside -->
+      <section class="wrapper__aside-header" role="header">
+        <!-- ↓ .aside: logo ↓  -->
+        <a class="logo link" href="">
+          <i class="logo__icon icon fab fa-spotify color_white"></i>
+          <h1 class="logo__title title">Spotify</h1>
+        </a>
+        <!--  ↑ .aside: logo ↑ -->
+
+        <!--  ↓ .aside: .navbar ↓ -->
+        <nav class="navbar dis_flex_col">
+          <button class="navbar__link link" type="button" role="link">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
+            <p class="navbar__txt txt">Cerca</p>
+          </button>
+          <button class="navbar__link link" type="button" role="link">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
+            <p class="navbar__txt txt">La tua libreria</p>
+          </button>
+          <button class="navbar__link--active link" type="button" role="link">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+            <p class="navbar__txt txt">Home</p>
+          </button>
+        </nav>
+        <!--  ↑ .aside: .navbar ↑ -->
+      </section>
+      <!--  ↑ sezione role='header' di .aside  ↑ -->
+
+      <!--  ↓ sezione role='main-top' di .aside ↓ -->
+      <section class="create-playlist" role="main-top">
+        <h3 class="create-playlist__title title text-uppercase">
+          playlist
+        </h3>
+        <a class="create-playlist__link link" href="" role="button">
+          <div class="create-playlist__add centered">
+            <span class="create-playlist__add__plus txt bold">
+              &plus;
+            </span>
+          </div>
+          <p class="create-playlist__add__txt txt">Crea Playlist</p>
+        </a>
+      </section>
+      <!--  ↑ sezione role='main-top' di .aside ↑  -->
+
+      <!--  ↓ sezione role='main-bottom' di .aside ↓  -->
+      <nav class="playlist" role="main-bottom">
+        <ul class="playlist__menu list_style_none">
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Qual è il </a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Patrono degli innamorati?</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">San Frattamo.</a>
+          </li>
+          <li>
+            <!-- inserito style per velocizzare la cagata che ho scritto (barzellettine prese da internet, non farina del mio sacco :D ) -->
+            <a href="" class="playlist__item link txt" role="button" style="margin-top: 20px">Se il</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Mio capo</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt" role="button">Si droga.. Io sono</a>
+          </li>
+          <li>
+            <a href="" class="playlist__item link txt"role="button">Un tossico dipendente?</a>
+          </li>
+        </ul>
+      </nav>
+      <!--  ↑ sezione role='main-bottom di .aside ↑  -->
+
+      <!--  ↓ sezione role='footer' di .aside ↓ -->
+      <section class="aside__footer bg_dark" role="footer">
+        <a class="aside__footer__install dis_flex link" href="">
+          <svg class="aside__footer__install__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Download</title><path fill="#ffffff" fill-rule="evenodd" d="M 12 11.657 V 6 h -1 v 5.65 L 9.076 9.414 l -0.758 0.65 l 3.183 3.702 l 3.195 -3.7 l -0.758 -0.653 L 12 11.657 Z M 11.5 2 C 7.358 2 4 5.358 4 9.5 c 0 4.142 3.358 7.5 7.5 7.5 c 4.142 0 7.5 -3.358 7.5 -7.5 C 19 5.358 15.642 2 11.5 2 Z m 0 14 C 7.916 16 5 13.084 5 9.5 S 7.916 3 11.5 3 S 18 5.916 18 9.5 S 15.084 16 11.5 16 Z" /></svg>
+          <p class="aside__footer__install__txt txt">Installa app</p>
+        </a>
+        <a class="aside__footer__profile dis_flex link" href="">
+          <svg class="aside__footer__profile__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>User</title><path fill="#ffffff" fill-rule="evenodd" d="M 67.74 61.78 l -14.5 -8.334 c -0.735 -0.422 -1.24 -1.145 -1.385 -1.98 c -0.145 -0.835 0.088 -1.685 0.638 -2.33 l 5.912 -6.93 c 3.747 -4.378 5.81 -9.967 5.81 -15.737 v -2.256 c 0 -6.668 -2.792 -13.108 -7.658 -17.67 C 51.622 1.92 45.17 -0.386 38.392 0.054 c -12.677 0.82 -22.607 11.772 -22.607 24.934 v 1.483 c 0 5.77 2.063 11.36 5.81 15.736 l 5.912 6.933 c 0.55 0.644 0.783 1.493 0.638 2.33 c -0.143 0.834 -0.648 1.556 -1.383 1.98 l -14.494 8.33 C 4.7 66.077 0 74.15 0 82.844 v 6.76 h 3.333 v -6.76 c 0 -7.5 4.055 -14.46 10.59 -18.174 l 14.5 -8.334 c 1.597 -0.918 2.692 -2.487 3.007 -4.302 c 0.315 -1.815 -0.19 -3.66 -1.387 -5.06 l -5.913 -6.936 c -3.23 -3.775 -5.01 -8.594 -5.01 -13.57 v -1.484 c 0 -11.41 8.562 -20.9 19.488 -21.608 c 5.85 -0.377 11.415 1.61 15.67 5.598 c 4.26 3.992 6.605 9.404 6.605 15.24 v 2.254 c 0 4.976 -1.778 9.796 -5.01 13.57 l -5.915 6.935 c -1.195 1.4 -1.7 3.246 -1.386 5.06 c 0.313 1.816 1.41 3.385 3.008 4.303 l 14.507 8.338 c 6.525 3.71 10.58 10.67 10.58 18.17 v 6.76 H 80 v -6.76 c 0 -8.695 -4.7 -16.768 -12.26 -21.063 Z" /></svg>
+          <h3 class="aside__footer__profile__title title">Alessandro DG</h3>
+        </a>
+      </section>
+      <!--  ↑ sezione role='footer' di .aside ↑ -->
+    </header>
+    <!--
+     ↑ header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↑
+    -->
+    <main class="main" role="main">
+      <section class="call_to_action">
+        <button class="upgrade text-uppercase color_white" role="link">
+          esegui l'upgrade
+        </button>
+      </section>
+      <section class="main-content">
+        <nav class="main-content__navbar dis_flex">
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">in evidenza</p>
+          </button>
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">podcast</p>
+          </button>
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">classifiche</p>
+          </button>
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">generi e mood</p>
+          </button>
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">nuove uscite</p>
+          </button>
+          <button class="main-content__navbar__item">
+            <p class="main-content__navbar__item__txt text-uppercase">scopri</p>
+          </button>
+        </nav>
+        <section class="main-content__recently-played">
+          <h2 class="main-content__recently-played__title title--h2 title">
+            Recently played
+          </h2>
+          <div class="main-content__container">
+            <div class="main-content__soundtrack-box soundtrack-box metal_lifting text-center">
+              <div class="main-content__soundtrack-box__image metal_lifting">
+                <img class="width_100 image" src="img/metal_lifting.jpg" alt="metal lifting">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Heavy Metal
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Subtitle
+              </p>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box stranger text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/stranger.jpeg" alt="stranger things">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Stranger Thinks, Vol. 1 (a Netflix Original Series Soundtrack)
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Kyle Dixon &amp; Michael Stein
+              </p>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box aquietplace text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/aquietplace.jpeg" alt="a quiet place">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                A quiet place
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Subtitle
+              </p>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box split text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/split.jpeg" alt="split">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Split
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Subtitle
+              </p>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box cure text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/cure.jpeg" alt="cure">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                A cure for wellness
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Subtitle
+              </p>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box sinister text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/sinister.jpeg" alt="sinister">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Sinister
+              </h3>
+              <p class="main-content__soundtrack-box__txt txt">
+                Subtitle
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="main-content__create-for-you">
+          <h2 class="main-content__create-for-you__title title--h2 title">
+            Creato per Alessandro DG
+          </h2>
+          <p class="main-content__create-for-you__txt txt--grey txt">
+            Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti
+          </p>
+          <div class="main-content__container">
+            <div class="main-content__soundtrack-box soundtrack-box release_radar text-center">
+              <div class="main-content__soundtrack-box__image release_radar">
+                <img class="width_100 image" src="img/radar.jpeg" alt="release radar">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Release Radar
+              </h3>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box daily_mix_1 text-center">
+              <div class="main-content__soundtrack-box__image">
+                <img class="width_100 image" src="img/mixdaily.jpeg" alt="daily mix 1">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Daily Mix 1
+              </h3>
+            </div>
+          </div>
+        </section>
+        <section class="main-content__popular-artist">
+          <h2 class="main-content__popular-artist__title title--h2 title">
+            Artisti pi&ugrave; popolari
+          </h2>
+          <p class="main-content__popular-artist__txt txt--grey txt">
+            Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti
+          </p>
+          <div class="main-content__container">
+            <div class="main-content__soundtrack-box soundtrack-box youg text-center">
+              <div class="main-content__soundtrack-box__image youg">
+                <img class="width_100 image" src="img/youg.jpeg" alt="youg">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Lana Del Rey
+              </h3>
+            </div>
+            <div class="main-content__soundtrack-box soundtrack-box einaudi text-center">
+              <div class="main-content__soundtrack-box__image einaudi">
+                <img class="width_100 image" src="img/einaudi.jpeg" alt="einaudi">
+                <i class="main-content__soundtrack-box__icon far fa-play-circle color_white "></i>
+              </div>
+              <h3 class="main-content__soundtrack-box__title title">
+                Ludovico Einaudi
+              </h3>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer dis_flex">
+      <section class="footer__track-info dis_flex">
+        <div class="footer__track-info__cover">
+          <img class="width_100 image" src="img/sinister.jpeg" alt="sinister" title="In ascolto">
+        </div>
+        <div class="footer__track-info__txt">
+          <h4 class="footer__track-info__title title--h4 title">Sinister</h4>
+          <p class="footer__track-info__name txt--grey txt">Sinister: - The Rite of left -</p>
+        </div>
+        <div class="footer__track-info__actions dis_flex">
+          <i class="footer__track-info__icon icon--grey far fa-heart" title="Aggiungi ai Preferiti"></i>
+          <i class="footer__track-info__icon icon--grey far fa-folder" title="Aggiungi a una playlist"></i>
+        </div>
+      </section>
+      <section class="footer__track-player dis_flex_col color_white">
+        <div class="footer__track-player__actions dis_flex">
+          <i class="footer__track-player__icon fas fa-random"></i>
+          <i class="footer__track-player__icon fas fa-step-backward"></i>
+          <i class="footer__track-player__icon far fa-play-circle"></i>
+          <i class="footer__track-player__icon fas fa-step-forward"></i>
+          <i class="footer__track-player__icon fas fa-redo-alt"></i>
+        </div>
+        <div class="footer__track-player__bar dis_flex">
+          <span class="footer__track-player__bar__time-duration txt">1:26</span>
+          <div class="footer__track-player__bar--grey dis_flex">
+            <div class="footer__track-player__bar--green">
+            </div>
+          </div>
+          <span class="footer__track-player__bar__time-left txt">4:35</span>
+        </div>
+      </section>
+      <section class="footer__track-audio dis_flex color_white">
+        <i class="footer__track-audio__icon fas fa-list-ul"></i>
+        <i class="footer__track-audio__icon fas fa-desktop"></i>
+        <i class="footer__track-audio__icon fas fa-volume-up"></i>
+        <div class="footer__track-audio__bar--grey dis_flex">
+          <div class="footer__track-audio__bar--green">
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <!-- ↓ questo script vuoto, permette di bypassare il bug di chrome che rende visibili le transition ai refresh della pagina ↓ -->
+  <script> </script>
+</body>
+</html>
