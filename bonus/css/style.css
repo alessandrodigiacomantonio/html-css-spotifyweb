@@ -659,9 +659,6 @@ padding-right: 10px;
 
 /*  ↓ mediaquery per display md ↓  */
 @media screen and (min-width: 992px) {
-  /* .main-content__soundtrack-box {
-    width: calc(100% / 4);
-  } */
   .footer__track-info__actions {
     flex-direction: row;
   }
@@ -672,9 +669,13 @@ padding-right: 10px;
 
 /*  ↓ mediaquery per display lg ↓  */
 @media screen and (min-width: 1200px) {
-  /* .main-content__soundtrack-box {
-    width: calc(100% / 6);
-  } */
+
+}
+
+@media screen and (max-height: 350px) {
+  .call_to_action {
+    display: none;
+  }
 }
 /* ↑FINE↑: mediaqueries
 
