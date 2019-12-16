@@ -250,13 +250,15 @@ body {
   margin-top: 30px;
 }
 .main-content__container {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  height: 270px;
+  margin-top: 30px;
+  overflow: hidden;
 }
 .main-content__soundtrack-box {
   padding-right: 15px;
-  width: calc(100% / 2);
+  width: 170px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -341,12 +343,18 @@ body {
 /* ↑ sezione .main-content__navbar ↑ */
 
 /* ↓ sezione .main-content__create-for-you ↓ */
+.main-content__create-for-you {
+  height: 270px;
+}
 .main-content__create-for-you__txt {
   margin-top: 10px;
 }
 /* ↑ sezione .main-content__create-for-you ↑ */
 
 /* ↓ sezione .main-content__popular-artist ↓ */
+.main-content__popular-artist {
+  height: 270px;
+}
 .main-content__popular-artist__txt {
   margin-top: 10px;
 }
@@ -651,9 +659,9 @@ padding-right: 10px;
 
 /*  ↓ mediaquery per display md ↓  */
 @media screen and (min-width: 992px) {
-  .main-content__soundtrack-box {
+  /* .main-content__soundtrack-box {
     width: calc(100% / 4);
-  }
+  } */
   .footer__track-info__actions {
     flex-direction: row;
   }
@@ -664,9 +672,9 @@ padding-right: 10px;
 
 /*  ↓ mediaquery per display lg ↓  */
 @media screen and (min-width: 1200px) {
-  .main-content__soundtrack-box {
+  /* .main-content__soundtrack-box {
     width: calc(100% / 6);
-  }
+  } */
 }
 /* ↑FINE↑: mediaqueries
 
