@@ -114,11 +114,18 @@
 
     <!-- ↓ main: contenuto scorrevole principale della pagina ↓ -->
     <main class="main" role="main">
+
+      <!-- ↓ main: sezione .call_to_action, fascia orizzontale con bg nero opacizzato fissata all'inizio della pagina, contenente un bottone per effettuare l'upgrade dell'app ↓ -->
       <section class="call_to_action">
         <button class="upgrade text-uppercase color_white" role="link">
           esegui l'upgrade
         </button>
       </section>
+      <!-- ↑ main: sezione .call_to_action, fascia orizzontale con bg nero opacizzato fissata all'inizio della pagina, contenente un bottone per effettuare l'upgrade dell'app ↑ -->
+
+      <!-- ↓ main: sezione .main-content, ha un bg blu scuro e racchiude tutti i contenuti principali della pagina, presenta una scrollbar.
+            ATTENZIONE: nelle prossime sezioni si susseguiranno molti elementi con classe 'soundtrack-box', questi elementi rappresentano l'ossatura di tutte le 'card' contenenti i vari brani musicali presenti nel main-content; composti quasi tutti da cover, titolo e piccolo paragrafo
+      ↓ -->
       <section class="main-content">
         <nav class="main-content__navbar dis_flex">
           <button class="main-content__navbar__item">
@@ -140,6 +147,8 @@
             <p class="main-content__navbar__item__txt text-uppercase">scopri</p>
           </button>
         </nav>
+
+        <!-- ↓ main: sezione .main-content__recently-played ↓ -->
         <section class="main-content__recently-played">
           <h2 class="main-content__recently-played__title title--h2 title">
             Recently played
@@ -219,6 +228,9 @@
             </div>
           </div>
         </section>
+        <!-- ↑ main: sezione .main-content__recentoly-played ↑ -->
+
+        <!-- ↓ main: sezione .main-content__create-for-you ↓ -->
         <section class="main-content__create-for-you">
           <h2 class="main-content__create-for-you__title title--h2 title">
             Creato per Alessandro DG
@@ -247,6 +259,9 @@
             </div>
           </div>
         </section>
+        <!-- ↑ main: sezione .main-content__create-for-you ↑ -->
+
+        <!-- ↓ main: sezione .main-content__popular-artist ↓ -->
         <section class="main-content__popular-artist">
           <h2 class="main-content__popular-artist__title title--h2 title">
             Artisti pi&ugrave; popolari
@@ -275,7 +290,10 @@
             </div>
           </div>
         </section>
+        <!-- ↑ main: sezione .main-content__popular-artist ↑ -->
       </section>
+      <!-- ↑ main: sezione .main-content, ha un bg blu scuro e racchiude tutti i contenuti principali della pagina, presenta una scrollbar ↑ -->
+
     </main>
     <!-- ↑ main: contenuto scorrevole principale della pagina ↑ -->
 
