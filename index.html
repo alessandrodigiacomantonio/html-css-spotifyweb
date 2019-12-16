@@ -111,6 +111,8 @@
     <!--
      ↑ header: colonna sinistra della pagina con bg nero, comprendente il logo 'spotify'; arriva fino a toccarsi con il footer della pagina ↑
     -->
+
+    <!-- ↓ main: contenuto scorrevole principale della pagina ↓ -->
     <main class="main" role="main">
       <section class="call_to_action">
         <button class="upgrade text-uppercase color_white" role="link">
@@ -275,7 +277,11 @@
         </section>
       </section>
     </main>
+    <!-- ↑ main: contenuto scorrevole principale della pagina ↑ -->
+
+    <!-- ↓ footer: contenuto finale della pagina, posto in orizzontale con bg grigio ↓ -->
     <footer class="footer dis_flex" role="footer">
+      <!-- ↓ footer: sezione .footer__track-info (parte sinistra del footer) ↓ -->
       <section class="footer__track-info dis_flex">
         <div class="footer__track-info__cover">
           <img class="width_100 image" src="img/sinister.jpeg" alt="sinister" title="In ascolto">
@@ -289,6 +295,9 @@
           <i class="footer__track-info__icon icon--grey far fa-folder" title="Aggiungi a una playlist"></i>
         </div>
       </section>
+      <!-- ↑ footer: sezione .footer__track-info (parte sinistra del footer) ↑ -->
+
+      <!-- ↓ footer: sezione .footer__track-player (parte centrale del footer) ↓ -->
       <section class="footer__track-player dis_flex_col color_white">
         <div class="footer__track-player__actions dis_flex">
           <i class="footer__track-player__icon fas fa-random"></i>
@@ -306,6 +315,9 @@
           <span class="footer__track-player__bar__time-left txt">4:35</span>
         </div>
       </section>
+      <!-- ↑ footer: sezione .footer__track-player (parte centrale del footer) ↑ -->
+
+      <!-- ↓ footer: sezione .footer__track-audio (parte destra del footer) ↓ -->
       <section class="footer__track-audio dis_flex color_white">
         <i class="footer__track-audio__icon fas fa-list-ul"></i>
         <i class="footer__track-audio__icon fas fa-desktop"></i>
@@ -315,7 +327,9 @@
           </div>
         </div>
       </section>
+      <!-- ↑ footer: sezione .footer__track-audio (parte destra del footer) ↑ -->
     </footer>
+    <!-- ↑ footer: contenuto finale della pagina, posto in orizzontale con bg grigio ↑ -->
   </div>
   <!-- ↓ questo script vuoto, permette di bypassare il bug di chrome che rende visibili le transition ai refresh della pagina ↓ -->
   <!-- <script> </script> -->
